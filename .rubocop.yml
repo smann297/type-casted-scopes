@@ -1,0 +1,35 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+OptionalArguments:
+  Exclude:
+    - 'lib/type_casted_scopes.rb'
+
+DoubleNegation:
+  Enabled: false
+    # Ruby Style guide recommends using !something.nil?
+    # but this is a disaster if something == false
+    # !!something == false
+  # !something.nil? == true
+
+Style/Lambda:
+  Enabled: false
